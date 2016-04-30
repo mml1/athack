@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+/** {
+	margin: 0px auto;
+}*/
+
+/*#hero_img {
+	margin: 0px auto;
+	width: 1024px;
+	height: 500px;
+}*/
+
+
+.container {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	background-image: url('../images/graffit_01.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#title {
+	margin: 0px auto;
+	padding: 20px;
+	background-color: black;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	width: 30%;
+	height: 170px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	/*position: absolute;*/
+	top: 50%;
+}
+
+	h1 {
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: bold;
+		font-size: 4.5em;
+	}
+
+.identify h3 {
+	background-color: black;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 10px 20px;
+	width: 300px;
+}
+
+.identify a {
+	padding: 10px;
+}
+
+footer {
+	padding: 20px;
+}
+
+
+
+
