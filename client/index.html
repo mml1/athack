@@ -21,6 +21,9 @@
 				templateUrl:"../static/partials/factors.html"
 
 			})
+			.when("/resources", {
+				templateUrl:"../static/partials/resources.html"
+			})
 			.otherwise({
 				templateUrl: "../static/partials/home.html"
 			})		
@@ -42,6 +45,9 @@
 			FactorFactory.index(function(dbinfo){
 				$scope.factors = dbinfo;
 			});
+		});
+		athAppModule.controller("ResourcesController", function($scope, FactorFactory){
+			
 		});
 
 	</script>
