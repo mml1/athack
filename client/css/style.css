@@ -15,8 +15,9 @@
 	height: 600px;
 	position: relative;
 	background-image: url('../images/graffit_01.jpg');
-	background-position: top-center;
+	background-position: top center;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 	overflow: hidden;
 }
 
