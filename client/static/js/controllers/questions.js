@@ -3,8 +3,8 @@ athAppModule.controller("questionsController", function($scope, $location, $rout
 	// console.log($scope.category);
 	$scope.questionArray;
 	$scope.currentQuestion;
-	$scope.domesticAbuseScore;
-	$scope.sexualExploitation;	
+	$scope.domesticAbuseScore = 0;
+	$scope.sexualExploitation = 0;	
 	// var last_ind;
 
 	$scope.startSurvey = function(category) {
@@ -23,22 +23,24 @@ athAppModule.controller("questionsController", function($scope, $location, $rout
 			$scope.currentQuestion = $scope.questionArray[$scope.questionArray.length - 1];
 			// console.log($scope.currentQuestion)
 			$scope.questionArray.pop();
+			// console.log('s scoure',$scope.sexualExploitation)
 			
 		}else{
-			questionFactory.toRescource($scope.sexualExploitation,$scope.domesticAbuseScore);
-			$location.path('rescource');
+			// console.log('da',$scope.domesticAbuseScore);
+			questionFactory.toResource($scope.sexualExploitation,$scope.domesticAbuseScore);
+			$location.path('resources');
 		};
 		// console.log("questionA", $scope.questionArray);
 	}
 	$scope.next= function(num, keyword){
-		// console.log(keyword, "in next", $scope.currentQuestion)
+		// console.log(num,keyword);
 		setCurrent();
 		if (keyword ==='b') {
 			$scope.domesticAbuseScore +=num;
 			$scope.sexualExploitation +=num;
-		}else if(keyword =='s'){
+		}else if(keyword ==='s'){
 			$scope.sexualExploitation +=num;
-		}else if(keyword =='d'){
+		}else if(keyword ==='d'){
 			$scope.domesticAbuseScore +=num;
 		};
 	}

@@ -1,57 +1,47 @@
-<div id="body">
-	<h1>Resources</h1>
-	
-	<h2>National Hotlines</h2>
-	<ul>
-		<li> Human Trafficking Resource Center: 888-373-7888 </li>
+<div class='container' ng-controller ="ResourcesController" style="background: transparent;">
+{{risks.se}}
+{{risks.da}}
+	<h1 class="text-center">Resources</h1>	
+	<div class = "col-sm-6">
+		<h2>National Hotlines</h2>
+		<ul>
+			<li> National Human Trafficking Resource Center: 888-373-7888 </li>
 
-		<li> Center for Missing and Exploited Children: 800-THE-LOST  </li>
+			<li> National Center for Missing and Exploited Children: 800-THE-LOST  </li>
 
-		<li> Runaway Safeline: 800-RUN-AWAY </li>
+			<li> National Runaway Safeline: 800-RUN-AWAY </li>
+			<li> National Sexual Assault: 800-656-HOPE (4673)</li>
+			 <li> National Domestic Violence Hotline 800-799-SAFE (7233)</li>
+			 <li>Suicide Prevention Hotline 800-273-8255</li>
+			 <li><a href ="http://www.vawnet.org">National Online Resource Center on Violence Against Women</a></li>
+
 	</ul>
-	<h2>Bay Area Wide</h2>
-
-	<ul>
-		<li><a href="http://misssey.org/">Misssey</a></li>
-	</ul>	
-
-	<div class = "row">
-		<h2 class = "text-center">County Specific</h2>	
 	</div>
-	<div class = "row">
-		<div class = "col-sm-4">
-			<h3>Alameda</h3>	
-		</div>
-		<div class = "col-sm-4">
-			<h3>Contra Costa</h3>	
-		</div>
-		<div class = "col-sm-4">
-			<h3>Marin</h3>	
-		</div>
+	<div class = "col-sm-6">
+		<h2>Bay Area Wide</h2>
+		<ul>
+			<li><a href="http://www.cpedv.org/national-and-state-links">California Partnership to end Domestic Violence</a></li>
+			<li><a href="http://misssey.org/">Misssey</a></li>
+			<li><a href="http://www.bawar.org/">BAWAR</a></li>
+			<li><a href="www.endabuse.org">Family Violence Prevention Fund</a></li>
+			<li><a href="www.loveourchildrenusa.org">Love Our Children</a></li>
+			<li><a href="http://www.californiacasa.org/">California CASA</a> (Court Advocate for foster youth)
+			<li><a href="http://www.artjustice.net/resources-to-empower/february-02nd-20162">Reimaging Urban Development</a> </li>
+		</ul>	
 	</div>
-	<div class = "row">
-		<div class = "col-sm-4">
-			<h3>Napa</h3>	
-		</div>
-		<div class = "col-sm-4">
-			<h3>San Francisco</h3>	
-		</div>
-		<div class = "col-sm-4">
-			<h3>San Mateo</h3>	
-		</div>
-	</div>
+	<h2 class="text-center col-sm-12">County Specific</h2>
+	<ul class="nav nav-tabs">
+		<li class="active"><a>County Specific</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/alameda.html"'>Alameda</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/contraCosta.html"'>Contra Costa</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/marin.html"'>Marin</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/napa.html"'>Napa</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/sf.html"'>San Francisco</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/sanMateo.html"'>San Mateo</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/santaClara.html"'>Santa Clara</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/solano.html"'>Solano</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/sonoma.html"'>Sonoma</a></li>
+	</ul>
 
-	<div class = "row">
-
-		<div class = "col-sm-4">
-			<h3>Santa Clara</h3>	
-		</div>
-		<div class = "col-sm-4">
-			<h3>Solano</h3>	
-		</div>
-		<div class = "col-sm-4">
-			<h3>Sonoma</h3>	
-		</div>
-	</div>
-
+	<ng-include src='countyPages'></ng-include>
 </div>

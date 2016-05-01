@@ -8,10 +8,10 @@ athAppModule.factory("questionFactory", function($http){
 			callback(dbinfo);
 		});
 	};
-	factory.toRescource = function(seNum, daNum){
+	factory.toResource= function(seNum, daNum){
 		risk['se'] = seNum;
 		risk['da'] = daNum;
-
+		// console.log(risk);
 	};
 	
 	factory.getRisks = function(cb){
