@@ -65,7 +65,7 @@ footer {
 
 #resource{
 	display: inline-block;
-	margin-left: 50%;
+	/*margin-left: 50%;*/
 }
 
 #first_form h3{
@@ -113,6 +113,23 @@ footer {
 		float: right;
 	}
 
+#result_page {
+	width: 900px;
+	margin-left: 30px;
+}
+
+	#result_body {
+		margin-left: 50px;
+	}
+
+	#result_body h3 {
+		margin-top: 40px;
+	}
+
+	p.para{
+		margin-left: 30px;
+		font-weight: bold;
+	}
 
 
 

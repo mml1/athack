@@ -1,13 +1,25 @@
 
 <div ng-controller="ResourcesController">
-	<h3>Sexual Abuse Score:</h3>
-	<p class="styled {{color}}">
-		<meter min="0" max="100" low="25" high="75" optimum="100" value="{{se}}"></meter>
-	</p>
-	<h3>Domestic Abuse Score</h3>
-	<p class="styled">
-		<meter min="0" max="100" low="25" high="75" optimum="100" value="{{da}}"></meter>
-	</p>
+	<div id="result_page">
+		<h1>Your Results</h1>
+		<div id="result_body">
+			<h3>Sexual Exploitation Risk Score: {{se}}</h3>
+			<p class="styled">
+				<meter min="0" max="100" low="25" high="75" optimum="100" value="{{se}}"></meter>
+			</p>
+			<p class="para">Your answers to the survey questions indicate a {{se_risk_level}} risk of sexual exploitation.  
+			<p class="para">Your next step should be {{se_next_step}}</p>
+
+			<h3>Domestic Abuse Risk Score: {{da}}</h3>
+			<p class="styled">
+				<meter min="0" max="100" low="25" high="75" optimum="100" value="{{da}}"></meter>
+			</p>
+			<p class="para">Your answers to the survey questions indicate a {{da_risk_level}} of domestic abuse.</p>
+			<p class="para">Your next step should be {{da_next_step}}</p>
+
+			<button class="btn-lg" align="center"><a href="#/resources" id="resource">Resources</a></button>
+		</div>
+	</div>
 
 </div>
 
