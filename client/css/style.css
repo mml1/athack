@@ -85,6 +85,25 @@ footer {
 	margin-left: 20px;
 }
 
+.question {
+	margin-left: 20px;
+}
+
+	.question p {
+		background-color: black;
+		color: white;
+		font-family: 'Open Sans Condensed', sans-serif;
+		padding: 10px 20px;
+		width: 500px;
+		font-size: 2em;
+	}
+
+	.question button{
+		border: black 3px solid;
+		background-color: white;
+		color: black;
+		font-weight: bold;
+	}
 
 
 
