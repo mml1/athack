@@ -2,11 +2,18 @@
 		<div>
 		<h1 id='factors_title'>Warning Signs</h1>
 		<a href="#/resources" id="resource">Resources</a>
+
 		<div class="question" align='center'>
 			<p>{{currentQuestion.text}}</p>
-			<a ng-click="next(0, 'b')"><button class="btn-lg align-left" align="left">No</button></a>
-			<a ng-click="next(currentQuestion.riskScore, currentQuestion.keyWord)"><button class="btn-lg">Yes</button></a>
-			
 		</div>
+
+		<div class='question_buttons' align='center'>
+			<!-- Yes / No Buttons -->
+			<a ng-click="next(0, 'b')"><button class="btn-lg pull-right">No</button></a>
+			<a ng-click="next(currentQuestion.riskScore, currentQuestion.keyWord)"><button class="btn-lg pull-left">Yes</button></a>
+		</div>
+			
+			
+		
 	</div>
 </div>

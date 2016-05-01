@@ -32,15 +32,15 @@
 	<h2 class="text-center col-sm-12">County Specific</h2>
 	<ul class="nav nav-tabs">
 		<li class="active"><a>County Specific</a></li>
-		<li><a ng-click='countyPages="static/partials/county_pages/alameda.html"'>Alameda</a></li>
-		<li><a ng-click='countyPages="static/partials/county_pages/contraCosta.html"'>Contra Costa</a></li>
-		<li><a ng-click='countyPages="static/partials/county_pages/marin.html"'>Marin</a></li>
-		<li><a ng-click='countyPages="static/partials/county_pages/napa.html"'>Napa</a></li>
-		<li><a ng-click='countyPages="static/partials/county_pages/sf.html"'>San Francisco</a></li>
-		<li><a ng-click='countyPages="static/partials/county_pages/sanMateo.html"'>San Mateo</a></li>
-		<li><a ng-click='countyPages="static/partials/county_pages/santaClara.html"'>Santa Clara</a></li>
-		<li><a ng-click='countyPages="static/partials/county_pages/solano.html"'>Solano</a></li>
-		<li><a ng-click='countyPages="static/partials/county_pages/sonoma.html"'>Sonoma</a></li>
+		<li data-toggle="tab"><a ng-click='countyPages="static/partials/county_pages/alameda.html"'>Alameda</a></li>
+		<li data-toggle="tab"><a ng-click='countyPages="static/partials/county_pages/contraCosta.html"'>Contra Costa</a></li>
+		<li data-toggle="tab"><a ng-click='countyPages="static/partials/county_pages/marin.html"'>Marin</a></li>
+		<li data-toggle="tab"><a ng-click='countyPages="static/partials/county_pages/napa.html"'>Napa</a></li>
+		<li data-toggle="tab"><a ng-click='countyPages="static/partials/county_pages/sf.html"'>San Francisco</a></li>
+		<li data-toggle="tab"><a ng-click='countyPages="static/partials/county_pages/sanMateo.html"'>San Mateo</a></li>
+		<li data-toggle="tab"><a ng-click='countyPages="static/partials/county_pages/santaClara.html"'>Santa Clara</a></li>
+		<li data-toggle="tab"><a ng-click='countyPages="static/partials/county_pages/solano.html"'>Solano</a></li>
+		<li data-toggle="tab"><a ng-click='countyPages="static/partials/county_pages/sonoma.html"'>Sonoma</a></li>
 	</ul>
 
 	<ng-include src='countyPages'></ng-include>

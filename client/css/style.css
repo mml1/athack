@@ -87,6 +87,8 @@ footer {
 
 .question {
 	margin-left: 20px;
+	/*background-color: gray;*/
+	height: 150px;
 }
 
 	.question p {
@@ -98,12 +100,21 @@ footer {
 		font-size: 2em;
 	}
 
-	.question button{
-		border: black 3px solid;
+	.question_buttons{
+		width: 400px;
+		height: 200px;
 		background-color: white;
 		color: black;
 		font-weight: bold;
+		margin: 0 auto;
 	}
+
+	.pull-right {
+		float: right;
+	}
+
+
+
 
 
 /*progress bar styling*/
@@ -234,12 +245,11 @@ progress {
 button {
   display: inline-block;
   border-radius: 3px;
-  border: none;
   font-size: 0.9rem;
   padding: 0.4rem 0.8em;
-  background: #69c773;
-  border-bottom: 1px solid #498b50;
-  color: white;
+  background: white;
+  border: 1px solid black;
+  color: black;
   -webkit-font-smoothing: antialiased;
   font-weight: bold;
   margin: 0 0.25rem;
