@@ -56,9 +56,32 @@
 footer {
 	padding: 20px;
 }
-#resource{
-	padding-left: 50px;
+
+#factors_title{
+	margin-left: 100px;
+	display: inline-block;
+	margin-bottom: 60px;
 }
+
+#resource{
+	display: inline-block;
+	margin-left: 50%;
+}
+
+#first_form h3{
+	background-color: black;
+	color: white;
+	padding: 10px 20px;
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#first_form input{
+	margin-bottom: 10px;
+}
+
+
 
 
 
