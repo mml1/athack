@@ -17,4 +17,4 @@
 { "_id" : { "$oid" : "57254bf31e8a18f5663e86a2" }, "text" : "Does the youth's family seem disinterested or uninvolved in the child's life?", "riskScore" : 4, "keyWord" : "d", "category" : "p" }
 { "_id" : { "$oid" : "57254c011e8a18f5663e86a3" }, "text" : "Does the youth appear malnourished or frequently try to take home food?", "riskScore" : 3, "keyWord" : "d", "category" : "p" }
 { "_id" : { "$oid" : "57254c171e8a18f5663e86a4" }, "text" : "Has the youth been acting out in public against either peers or authority?", "riskScore" : 4, "keyWord" : "d", "category" : "p" }
-{ "_id" : { "$oid" : "57254c251e8a18f5663e86a5" }, "text" : "Does the child been engaging in bullying behaviors?", "riskScore" : 4, "keyWord" : "d", "category" : "p" }
+{ "_id" : { "$oid" : "57254c251e8a18f5663e86a5" }, "text" : "Has the child been engaging in bullying behaviors?", "riskScore" : 4, "keyWord" : "d", "category" : "p" }
