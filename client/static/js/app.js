@@ -11,6 +11,9 @@ athAppModule.config(function($routeProvider, $locationProvider){
 	.when("/question", {
 		templateUrl:"../static/partials/question.html"
 	})
+	.when("/results",{
+		templateUrl:"../static/partials/results.html"
+	})
 	.otherwise({
 		templateUrl: "../static/partials/home.html"
 	})		
