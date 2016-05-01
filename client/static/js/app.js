@@ -3,7 +3,6 @@ athAppModule.config(function($routeProvider, $locationProvider){
 	$routeProvider
 	.when("/question", {
 		templateUrl:"../static/partials/question.html"
-
 	})
 	.when("/resources", {
 		templateUrl:"../static/partials/resources.html"
