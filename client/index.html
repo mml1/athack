@@ -14,55 +14,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script type="text/javascript">
-		var athAppModule = angular.module("athApp", ["ngRoute"]);
-		athAppModule.config(function($routeProvider){
-			$routeProvider
-			.when("/factors", {
-				templateUrl:"../static/partials/factors.html"
 
-			})
-			.when("/resources", {
-				templateUrl:"../static/partials/resources.html"
-			})
-			.otherwise({
-				templateUrl: "../static/partials/home.html"
-			})		
-		});
+	<script src="./static/js/app.js"></script>
+	<script src="./static/js/controllers/questions.js"></script>
+	<script src="./static/js/factories/question.js"></script>
+	<script type="text/javascript" src="./static/js/controllers/homes.js"></script>
 
-		athAppModule.factory("FactorFactory", function($http){
-			var factory = {};
-			var factors = [];
-			factory.index = function(callback){
-				$http.get("/REPLACE").success(function(dbinfo){
-					factors = dbinfo;
-					callback(factors);
-				});
-			};
-			return factory;
-		});
-
-		athAppModule.controller("FactorsController", function($scope, FactorFactory){
-
-			// capturing if 18 yr or young or if adult
-			FactorFactory.index(function(dbinfo){
-				$scope.factors = dbinfo;
-			});
-
-			// (parent version) capturing data and warning sign
-			$scope.submit_add_adult = function(){
-				console.log($scope.add_adult);
-
-				$scope.add_adult = {};
-			}
-
-		});
-
-		athAppModule.controller("ResourcesController", function($scope, FactorFactory){
-			
-		});
-
-	</script>
 	
 </head>
 <body>

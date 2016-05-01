@@ -1,0 +1,10 @@
+<div ng-controller = "questionsController">
+		<div>
+		<h1 id='factors_title'>Warning Signs</h1>
+		<a href="#/resources" id="resource">Resources</a>
+
+			<p>{{currentQuestion.text}}</p>
+			<a ng-click="next(currentQuestion.riskScore, currentQuestion.keyWord)"><button class="btn btn-warning">Yes</button></a>
+			<a ng-click="next(0, 'b')"><button class="btn btn-success">No</button></a>
+	</div>
+</div>

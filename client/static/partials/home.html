@@ -1,12 +1,10 @@
-<div ng-controller = "FactorsController">
-
+<div ng-controller="questionsController">
 	<div class='container'>
 		<h1 id="title" align="center">Warning Signs</h1>
 	</div>
 
 	<div class="identify row" align='center'>
 		<h3>Who are you?</h3>
-		<a href="#">I am under 18</a>  |  <a href="#/factors">I am a Parent / Community Member</a>
+		<a ng-click="startSurvey('c')">I am under 18</a>  |  <a ng-click="startSurvey('p'); getQuestion()">I am a Parent / Community Member</a>
 	</div>
-
 </div>
