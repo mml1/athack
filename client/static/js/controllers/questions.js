@@ -28,7 +28,7 @@ athAppModule.controller("questionsController", function($scope, $location, $rout
 		} else {
 			// console.log('da',$scope.domesticAbuseScore);
 			questionFactory.toResource($scope.sexualExploitation,$scope.domesticAbuseScore);
-			$location.path('resources');
+			$location.path('results');
 		};
 		// console.log("questionA", $scope.questionArray);
 	}
