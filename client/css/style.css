@@ -41,6 +41,10 @@
 		font-size: 4.5em;
 	}
 
+	#heading {
+		padding-top: 30px;
+	}
+
 .identify h3 {
 	background-color: black;
 	color: white;
@@ -65,7 +69,20 @@ footer {
 
 #resource{
 	display: inline-block;
-	/*margin-left: 50%;*/
+	margin-left: 50%;
+	font-size: 1.5em;
+}
+
+.text-center {
+	padding-bottom: 30px;
+}
+
+#resource_links {
+	margin-left: 150px;
+}
+
+#resource_links li {
+	margin-left: -25px;
 }
 
 #first_form h3{
@@ -125,6 +142,8 @@ footer {
 	#result_body h3 {
 		margin-top: 40px;
 	}
+
+
 
 	p.para{
 		margin-left: 30px;
