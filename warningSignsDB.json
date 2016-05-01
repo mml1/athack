@@ -1,0 +1,20 @@
+{ "_id" : { "$oid" : "57253d621e8a18f5663e8692" }, "text" : "Is the youth exhibiting changes in eating habits?", "riskScore" : 3, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "57253f451e8a18f5663e8693" }, "text" : "Does the youth have mood swings?", "riskScore" : 3, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "5725405c1e8a18f5663e8694" }, "text" : "Has the youth experienced seemingly unexplained changes in sleep pattern?", "riskScore" : 3, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "572540a21e8a18f5663e8695" }, "text" : "Has the youth recently run away from home?", "riskScore" : 4, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "572542241e8a18f5663e8696" }, "text" : "Has there been a significant change in the youth's relationships with peers, and/or attendance at social events?", "riskScore" : 2, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "5725427b1e8a18f5663e8697" }, "text" : "Does the youth appear easily startled or jumpy?", "riskScore" : 4, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "572542db1e8a18f5663e8698" }, "text" : "Have you noticed unexplained marks or bruises on the youth's body?", "riskScore" : 4, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "572544261e8a18f5663e8699" }, "text" : "Has the youth been missing more school?", "riskScore" : 3, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "572544891e8a18f5663e869a" }, "text" : "Have you noticed signs of self-harm?", "riskScore" : 5, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "572545551e8a18f5663e869b" }, "text" : "Have you noticed frequent signs of intoxication due to either drugs or alcohol?", "riskScore" : 3, "keyWord" : "b", "category" : "p" }
+{ "_id" : { "$oid" : "57254b441e8a18f5663e869c" }, "text" : "Has the youth recently began coming home at late or at inconsitent hours without willingness to share the reason?", "riskScore" : 2, "keyWord" : "s", "category" : "p" }
+{ "_id" : { "$oid" : "57254b601e8a18f5663e869d" }, "text" : "Does the youth have unexplained gifts or money?", "riskScore" : 4, "keyWord" : "s", "category" : "p" }
+{ "_id" : { "$oid" : "57254b7d1e8a18f5663e869e" }, "text" : "Does the youth's significant other control his or her behavior?", "riskScore" : 5, "keyWord" : "s", "category" : "p" }
+{ "_id" : { "$oid" : "57254ba11e8a18f5663e869f" }, "text" : "Has the youth changed their wardrobe to be more provocative?", "riskScore" : 2, "keyWord" : "s", "category" : "p" }
+{ "_id" : { "$oid" : "57254bb01e8a18f5663e86a0" }, "text" : "Does the youth have a new job about which they are hesitant to share details?", "riskScore" : 3, "keyWord" : "s", "category" : "p" }
+{ "_id" : { "$oid" : "57254bd91e8a18f5663e86a1" }, "text" : "Has the youth been wearing unintentionally dirty or damaged clothing?", "riskScore" : 3, "keyWord" : "d", "category" : "p" }
+{ "_id" : { "$oid" : "57254bf31e8a18f5663e86a2" }, "text" : "Does the youth's family seem disinterested or uninvolved in the child's life?", "riskScore" : 4, "keyWord" : "d", "category" : "p" }
+{ "_id" : { "$oid" : "57254c011e8a18f5663e86a3" }, "text" : "Does the youth appear malnourished or frequently try to take home food?", "riskScore" : 3, "keyWord" : "d", "category" : "p" }
+{ "_id" : { "$oid" : "57254c171e8a18f5663e86a4" }, "text" : "Has the youth been acting out in public against either peers or authority?", "riskScore" : 4, "keyWord" : "d", "category" : "p" }
+{ "_id" : { "$oid" : "57254c251e8a18f5663e86a5" }, "text" : "Does the child been engaging in bullying behaviors?", "riskScore" : 4, "keyWord" : "d", "category" : "p" }
