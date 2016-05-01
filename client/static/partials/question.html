@@ -3,19 +3,8 @@
 		<h1 id='factors_title'>Warning Signs</h1>
 		<a href="#/resources" id="resource">Resources</a>
 
-		<form align='center' id='first_form'>
-
-			<h3>I'm worried about...</h3>
-			<h5><input type="radio" ng-model="add_adult.myChild" value="myChild" name="add_adult">My Child</h5>
-			<h5><input type="radio" ng-model="add_adult.otherChild" value="otherChild" name="add_adult">Other Child</h5>
-
-			<h3 >Zipcode</h3>
-
-			<input type='text' ng-model='add_adult.zipcode' placeholder='(Optional)'>
-			<br>
-			<input type='submit' class='btn btn-warning btn-sm'  ng-click="submit_add_adult()">
-
-		</form>
-
+			<p>{{currentQuestion.text}}</p>
+			<a ng-click="next(currentQuestion.riskScore, currentQuestion.keyWord)"><button class="btn btn-warning">Yes</button></a>
+			<a ng-click="next(0, 'b')"><button class="btn btn-success">No</button></a>
 	</div>
 </div>

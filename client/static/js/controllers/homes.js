@@ -11,8 +11,6 @@ athAppModule.controller("homeController", function($scope, questionFactory, $rou
 
 	// 	$scope.add_adult = {};
 	// }
-	$scope.startSurvey = function(category) {
-		$location.path("/question").search({category: category});
-	}
+
 
 });
