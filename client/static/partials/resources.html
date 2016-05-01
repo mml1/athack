@@ -1,5 +1,6 @@
-<div id= "resources" ng-controller ="ResourcesController">
-	<h1>Resources</h1>
+
+<div class='container' ng-controller ="ResourcesController" style="background: transparent;">
+	<h1 class="text-center">Resources</h1>	
 	<div class = "col-sm-6">
 		<h2>National Hotlines</h2>
 		<ul>
@@ -27,91 +28,19 @@
 			<li> <a href="http://www.californiacasa.org/">California CASA</a> (Court Advocate for foster youth)
 		</ul>	
 	</div>
-	<div>
-		<h2 class = "text-center">County Specific</h2>	
+	<h2 class="text-center col-sm-12">County Specific</h2>
+	<ul class="nav nav-tabs">
+		<li class="active"><a>County Specific</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/alameda.html"'>Alameda</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/contraCosta.html"'>Contra Costa</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/marin.html"'>Marin</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/napa.html"'>Napa</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/sf.html"'>San Francisco</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/sanMateo.html"'>San Mateo</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/santaClara.html"'>Santa Clara</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/solano.html"'>Solano</a></li>
+		<li><a ng-click='countyPages="static/partials/county_pages/sonoma.html"'>Sonoma</a></li>
+	</ul>
 
-		<div class = "col-sm-4">
-			<h3>Alameda</h3>
-			<ul>
-				<li><a href="http://icwclaw.org/wp-content/uploads/2011/02/Alameda-County-Family-Violence-Resources.pdf">Domestic Violence Resource Guide </a></li>
-
-				<li><a href="http://www.acfjc.org/get_help">Family Justice Center </a></li>
-
-				<li><a href="http://www.midwayshelter.org/">Midway Shelter for Abused and Homeless Women and Children </a></li>
-
-			</ul>
-		</div>
-		<div class = "col-sm-4">
-			<h3>Contra Costa</h3>
-			<ul>
-				<li><a href="http://www.cvsolutions.org/">Community Violence Solutions and Rape Crisis Center of Marin and Contra Costa Counties</a></li>
-			</ul>		
-		</div>
-		<div class = "col-sm-4">
-			<h3>Marin</h3>	
-			<ul>
-				<li><a href="http://www.cvsolutions.org/">Community Violence Solutions and Rape Crisis Center of Marin and Contra Costa Counties</a></li>
-			</ul>	
-		</div>
-	</div>
-	<div class = "row">
-		<div class = "col-sm-4">
-			<h3>Napa</h3>
-			<ul>
-				<li><a href="https://www.napanews.org/">Emergency Women’s Services</a> </li>
-			</ul>	
-		</div>
-		<div class = "col-sm-4">
-			<h3>San Francisco</h3>
-			<ul>
-				<li><a href="http://www.casarc.org/help.html">Child and Adolescent Support Advocacy and Resource Center</a> (CASARC) Geared towards parents</li>
-			</ul>	
-		</div>
-		<div class = "col-sm-4">
-			<h3>San Mateo</h3>
-			<ul>
-				<li><a href="http://www.sanmateomedicalcenter.org/content/ServicesKellerCenterforViolenceIntervention.htm">Keller Center for Family Violence Intervention </a></li>
-
-				<li><a href="http://www.corasupport.org/CORA: Community Overcoming Relationship Abuse"></a> </li>
-
-				<li><a href="
-
-https://bnc.smcgov.org/sites/bnc.smcgov.org/files/DVResources_1.pdf">Violence and Abuse Prevention Services in San Mateo County</a></li>
-
-
-			</ul>	
-		</div>
-	</div>
-
-	<div class = "row">
-
-		<div class = "col-sm-4">
-			<h3>Santa Clara</h3>
-			<ul>
-				<li><a href="http://santaclaraca.gov/government/departments/city-manager/housing-community-services-division/emergency-housing">Emergency Housing </a></li>
-
-				<li><a href="http://www.sjpd.org/BOI/fvc/">San Jose Police Department</a></li>
-			</ul>	
-		</div>
-		<div class = "col-sm-4">
-			<h3>Solano</h3>	
-			<ul>
-				<li><a href = "http://www.co.solano.ca.us/depts/fvp/mission.asp"> Family Violence Prevention</a> </li>
-				<li><a href = "https://www.solanocounty.com/depts/fvp/domestic_violence.asp">Solano Domestic Violence Hotline</a></li>
-				<li><a href="https://www.cdph.ca.gov/HealthInfo/injviosaf/Documents/Solano.pdf">Violence Prevention Resource Directory </a></li>
-				<li><a href="https://www.solanocounty.com/depts/fvp/sexual_assault/default.asp">Sexual Assault Resources </a></li>
-
-			</ul>
-		</div>
-		<div class = "col-sm-4">
-			<h3>Sonoma</h3>
-			<ul>
-				<li><a href="http://www.fjcsc.org/">Family Justice Center </a></li>
-				<li><a href="http://www.sonomasheriff.org/domestic-violence/">Sheriff’s Office </a></li>
-				<li><a href="http://www.sonomaovernightsupport.org/Sonoma"> Overnight Support</a> </li>
-
-
-			</ul>	
-		</div>
-	</div>
+	<ng-include src='countyPages'></ng-include>
 </div>
