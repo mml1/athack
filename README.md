@@ -8,9 +8,11 @@ In an effort to stop human trafficking, Warning Signs attempts to identify indiv
 + HTML5
 + CSS3 
 + AngularJS
+
 ##### Server Side: 
 + Node.js 
 + Express.js
+
 ##### Database: 
 + MongoDB
 
