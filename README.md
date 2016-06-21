@@ -1,18 +1,15 @@
 #  Warning Signs
-@version 1.0 2016
+Version: 1.0 2016
 
-### What does the web app do?
-**	Prevention is key. Stop human trafficking before it starts by knowing the signs.Our dynamic survey shows you how.**
+In an effort to stop human trafficking, Warning Signs attempts to identify individuals at risk of being exploited through a dynamic survey. Provides resources for individuals divided by location.
 
-### Core features
-**Providing resources and solutions to youth and community members targeting different level of risks and different locations.
+### Technology Used
+Frontend: HTML5, CSS3, AngularJS
+Server Side: Node.js, Express.js
+Database: MongoDB
 
-Raising RED FLAGS and awareness. Stop human trafficking before it starts.  **  
+### Future Features:
 
-### Technology we used
-Front End: HTML5, CSS3, AngularJS
-Server Side: NodeJS
-Data Base: Mongoldb
-
-###Future work:
-**keep update survey question data to address different situations **
++ Return targeted resources
++ Ability to update questions
++ Path for peer
