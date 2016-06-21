@@ -1,5 +1,5 @@
 #  Warning Signs
-Version: 1.0 2016
+Version: 1.0, 2016
 
 In an effort to stop human trafficking, Warning Signs attempts to identify individuals at risk of being exploited through a dynamic survey. Provides resources for individuals divided by location.
 
